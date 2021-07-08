@@ -654,3 +654,12 @@ img {
   /* transform: translate(30%, 50%); */
   transform: scale(0.1);
 }
+
+/* .icon-icon-send {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+} */
