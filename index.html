@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
@@ -348,6 +349,18 @@
                 </li>
             </ul>
         </div>
+        <div class="footer-form-box">
+           <p class="footer-form-title">Подпишитесь на рассылку</p>
+            <form class="footer-form-send" action="" method="POST">
+                <div class="footer-form-box-send">
+                    <input class="footer-form-input" type="email" id="email" placeholder="E-mail">
+                <button class="footer-form-send-button" type="submit">Подписаться
+                <svg class="footer-form-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg></button>
+                </div>
+            </form>
+        </div>
     </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -357,38 +370,50 @@
                 <use href="./images/icons.svg#icon-close-black-backdrop"></use>
             </svg>
         </button>
-            <h3 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h3>
-            <form action="">
-                <label class="modal-form-label" for="name">Имя</label>
+            <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form" name="form1" action="" method="POST">
+                <label class="modal-form-label" for="name">Имя *</label>
                 <div class="modal-form-box">
-                    <input class="modal-form-input" id="name" type="text">
+                    <input class="modal-form-input" id="name" type="text" minlength="2" maxlength="25" autofocus placeholder="Иван" required>
                     <svg class="modal-form-icon" width="18px" height="18px">
                         <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
                 </div>
-                <label class="modal-form-label" for="phone">Телефон</label>
+                <label class="modal-form-label" for="phone">Телефон *</label>
                 <div class="modal-form-box">
-                    <input class="modal-form-input" id="phone" type="text">
+                    <input class="modal-form-input tel" name="phone" id="phone" type="tel" placeholder="+38 (000) 000 00 00" required title="000-000-00-00"> 
                     <svg class="modal-form-icon" width="18px" height="18px">
                         <use href="./images/icons.svg#icon-phone-black"></use>
                     </svg>
                 </div>
-                <label class="modal-form-label" for="email">Почта</label>
+                <label class="modal-form-label" for="email">Почта *</label>
                 <div class="modal-form-box">
-                    <input class="modal-form-input" id="email" type="text">
+                    <input class="modal-form-input" id="email" type="email" placeholder="test@test.com" required>
                     <svg class="modal-form-icon" width="18px" height="18px">
                         <use href="./images/icons.svg#icon-email-black"></use>
                     </svg>
                 </div>
                 <label class="modal-form-label" for="">Комментарий</label>
-                <textarea class="modal-form-comment" name="comment" id="comment" cols="20" rows="10"
+                <textarea class="modal-form-comment" name="comment" id="comment" rows="10"
                     placeholder="Введите текст"></textarea>
                 <label class="modal-form-comment-flex" for="accept"><input class="checkbox-input visually-hidden" type="checkbox" name="accept" id="accept"><span
                         class="modal-check-box"></span><span class="modal-check-accept">Соглашаюсь с рассылкой и принимаю <a class="modal-check-order" href="">Условия
                             договора</a></span></label>
+                            <button type="submit" class="form-send-button">Отправить</button>
+
+                            <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" -->
+
+                            <!-- <div class="row">
+                                <label for="phone">Телефон:</label>
+                            </div>
+                            <div class="row">
+                                <input class="tel" type="tel" name="phone" id="phone" placeholder="+38(000)000-00-00" />
+                            </div> -->
             </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/imask.js"></script>
+    <!-- <script src="./js/email-validation.js"></script> -->
 </body>
 </html>
