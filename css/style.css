@@ -982,18 +982,20 @@ border: 1px solid transparent;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   align-items: center;
   letter-spacing: 0.03em;
-display: flex;
+  display: flex;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-input:hover,
 .footer-form-input:focus {
   border-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 .footer-form-box-send {
   display: flex;
   align-items: center;
+
 
 }
 .footer-form-send {
