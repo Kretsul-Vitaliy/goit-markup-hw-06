@@ -177,7 +177,7 @@ p {
   text-decoration: none;
   letter-spacing: 0.03em;
   color: var(--footer-item-color);
-  margin-right: 10px;
+  /* margin-right: 10px; */
   /* Добавляем анимацию */
   transition: color 250ms var(--transition-timing-function);
 }
@@ -191,7 +191,8 @@ p {
   text-decoration: none;
   /* Добавляем анимацию */
   transition: color 250ms var(--transition-timing-function);
-}
+  white-space: nowrap; /* Запрещаем перенос текста */
+ }
 /* Делаем цвет фона footer */
 .footer-background {
   background-color: var(--hero-background-color);
@@ -655,7 +656,6 @@ img {
   margin-top: 20px;
 }
 .footer-social {
-  margin-left: 70px;
 }
 .footer-social-link {
   display: flex;
@@ -683,6 +683,7 @@ img {
   align-items: baseline;
 }
 .logo-adress {
+  margin-right: 70px;
 }
 /* Модальное окно */
 .backdrop {
@@ -918,8 +919,8 @@ border: 1px solid transparent;
 /* Форма подпишить на рассылку */
 .footer-form-box {
 margin-left: 93px;
+/* width: 570px; */
 width: 100%;
-
 }
 
 .footer-form-title {
@@ -993,12 +994,8 @@ display: flex;
 .footer-form-box-send {
   display: flex;
   align-items: center;
-  margin-top: 20px;
 
 }
-
-
-
-/* identical to box height, or 125% */
-
-
+.footer-form-send {
+  margin-top: 20px;
+  }
