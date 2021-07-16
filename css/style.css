@@ -990,6 +990,10 @@ border: 1px solid transparent;
 .footer-form-input:focus {
   border-color: var(--accent-color);
   color: var(--primary-white-color);
+  
+}
+.footer-form-input::placeholder {
+
 }
 
 .footer-form-box-send {
